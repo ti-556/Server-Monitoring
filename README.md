@@ -30,6 +30,11 @@ pip3 install adafruit-circuitpython-ads1x15
 - 1k Ohm Resistor x4
 - 4.7k Ohm Resistor x1
 
+### Simple General Layout
+
+![Layout Diagram](images/thermopowerdiagram.png)
+
+
 ![pcb circuit diagram](images/thermopowercircuit.png)
 
 ![pcb layout](images/thermopowerpcb.png)
