@@ -49,7 +49,7 @@ $$ Power = {V_O} * {RMS} * {n} / {R_L} $$
 
 Output voltage data from CTL-10-CLS is converted from analog to digital through ADS1115 and sent to raspi via I2C. Temperature data is directly sent from DS18B20 to raspi via 1-Wire. Frame data sent to raspi from webcam directly via USB.
 
-![Layout Diagram](images/thermopowerlayout.jpg)
+![Layout Diagram](images/layoutdiagram.jpg)
 
 ### PCB
 
