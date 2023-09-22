@@ -21,7 +21,16 @@ pip3 install adafruit-circuitpython-ads1x15
 
 ## Circuit
 
-![circuit diagram](images/thermopowercircuit.png)
+### Components
+- Raspberry Pi 4B x1
+- Logicool Webcam C270n x1
+- ADS1115 x1
+- CTL-10-CLS x4
+- DS18B20 x4
+- 1k Ohm Resistor x4
+- 4.7k Ohm Resistor x1
+
+![pcb circuit diagram](images/thermopowercircuit.png)
 
 ![pcb layout](images/thermopowerpcb.png)
 
