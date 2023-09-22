@@ -21,10 +21,10 @@ pip3 install adafruit-circuitpython-ads1x15
 
 ## Circuit
 
-![circuit diagram](thermopowercircuit.png)
+![circuit diagram](images/thermopowercircuit.png)
 
-![pcb layout](thermopowerpcb.png)
+![pcb layout](images/thermopowerpcb.png)
 
-![pcb 3d  model](thermopowerpcb3d.png)
+![pcb 3d  model](images/thermopowerpcb3d.png)
 
 
