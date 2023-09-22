@@ -1,4 +1,5 @@
-# monitoring
+# Server Monitoring
+A monitoring prometheus exporter for a server. Power and temperature values are exported in prometheus format via HTTP server. In addition, a webcam capture is taken every several seconds and saved within raspi for surveillance.
 
 ## Setup
 Enable 1-Wire interface by adding the following line on config.txt, then reboot raspi.
@@ -8,6 +9,8 @@ $ sudo nano /boot/config.txt
 dtoverlay=w1-gpio,pullup=on
 $ reboot
 ```
+Enable I2C interface:
+Preferences -> Raspberry Pi Configuration -> Interfaces -> I2C (Enabled)
 
 ## Libraries
 ```
@@ -30,13 +33,21 @@ pip3 install adafruit-circuitpython-ads1x15
 - 1k Ohm Resistor x4
 - 4.7k Ohm Resistor x1
 
-### Simple General Layout
+### General Layout
 
-![Layout Diagram](images/thermopowerdiagram.png)
+Output voltage data from CTL-10-CLS is converted from analog to digital through ADS1115 and sent to raspi via I2C. Temperature data is directly sent from DS18B20 to raspi via 1-Wire. Frame data sent to raspi from webcam directly via USB.
 
+![Layout Diagram](images/thermopowerlayout.jpg)
+
+### PCB
+
+A simple PCB for mass production. Pin sockets and terminals used for expensive components. 1x10 pin socket for ADS1115, 1x6 pin socket for GPIO, and 1x2 terminals for CTL-10-CLS.
+
+#### Schematic Diagram
 
 ![pcb circuit diagram](images/thermopowercircuit.png)
 
+#### PCB Diagram
 ![pcb layout](images/thermopowerpcb.png)
 
 ![pcb 3d  model](images/thermopowerpcb3d.png)
