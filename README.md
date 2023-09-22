@@ -67,7 +67,10 @@ A simple PCB for mass production. Pin sockets and terminals used for expensive c
 ## References
 
 https://dolls.tokyo/post-11081/
+
 https://www.souichi.club/raspberrypi/rasppi-ds18b20/
+
 https://www.ishikawa-lab.com/RasPi_wattmeter.html
+
 https://itnext.io/prometheus-building-a-custom-prometheus-exporter-in-python-988908327600
 
