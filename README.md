@@ -22,6 +22,18 @@ pip3 install prometheus_client
 pip3 install adafruit-circuitpython-ads1x15
 ```
 
+## Power Calculation
+Several voltage data are collected to calculate RMS:
+
+$$ RMS = \sqrt{\frac{1}{n}\Sigma_{i=1}^{n}{{V_i}^2}} $$
+
+Then, Power consumption is calculated using the following method:
+
+$$ Power = {V_O} * {RMS} * {n} / {R_L} $$
+- R<sub>L</sub> = Resistance
+- n = Number of Windings
+- V<sub>O</sub> = Outlet Voltage
+  
 ## Circuit
 
 ### Components
@@ -52,4 +64,10 @@ A simple PCB for mass production. Pin sockets and terminals used for expensive c
 
 ![pcb 3d  model](images/thermopowerpcb3d.png)
 
+## References
+
+https://dolls.tokyo/post-11081/
+https://www.souichi.club/raspberrypi/rasppi-ds18b20/
+https://www.ishikawa-lab.com/RasPi_wattmeter.html
+https://itnext.io/prometheus-building-a-custom-prometheus-exporter-in-python-988908327600
 
