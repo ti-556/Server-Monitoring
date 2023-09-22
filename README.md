@@ -19,6 +19,12 @@ pip3 install prometheus_client
 pip3 install adafruit-circuitpython-ads1x15
 ```
 
-#Circuit
+## Circuit
+
+![circuit diagram](thermopowercircuit.png)
+
+![pcb layout](thermopowerpcb.png)
+
+![pcb 3d  model](thermopowerpcb3d.png)
 
 
