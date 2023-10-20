@@ -39,9 +39,9 @@ $$ Power = {V_O} * {RMS} * {n} / {R_L} $$
 ### Components
 - Raspberry Pi 4B x1
 - Logicool Webcam C270n x1
-- ADS1115 x1
-- CTL-10-CLS x4
-- DS18B20 x4
+- ADS1115 (A/D Converter) x1
+- CTL-10-CLS (Analog Voltage Clamp) x4
+- DS18B20 (Thermosensor) x4
 - 1k Ohm Resistor x4
 - 4.7k Ohm Resistor x1
 
@@ -64,6 +64,24 @@ A simple PCB for mass production. Pin sockets and terminals used for expensive c
 
 ![pcb 3d  model](images/thermopowerpcb3d.png)
 
+## Multi Relay HAT Module 
+
+### Components
+- Raspberry Pi 4B x1
+- MCP23017 (16bit I/O Expander) x1
+- J1071CS3VDC.36 (3V SPDT Relay) x1
+
+### Setup
+Command line arguments are used to turn on/off relays:
+```
+python3 multirelay.py <on/off> <relay number>
+python3 multirelay.py test
+```
+Argument "test" can be used to test all relays.
+
+#### PCB Diagram
+![pcb 3d model](images/multirelaypcb3d.png)
+
 ## References
 
 https://dolls.tokyo/post-11081/
@@ -73,4 +91,5 @@ https://www.souichi.club/raspberrypi/rasppi-ds18b20/
 https://www.ishikawa-lab.com/RasPi_wattmeter.html
 
 https://itnext.io/prometheus-building-a-custom-prometheus-exporter-in-python-988908327600
+
 
