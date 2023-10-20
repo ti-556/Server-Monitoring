@@ -1,6 +1,9 @@
 # Server Monitoring
 A monitoring prometheus exporter for a server. Power and temperature values are exported in prometheus format via HTTP server. In addition, a webcam capture is taken every several seconds and saved within raspi for surveillance.
 
+Update (10.18.2023):
+Designed a relay baord PCBA to physically control each server.
+
 ## Setup
 Enable 1-Wire interface by adding the following line on config.txt, then reboot raspi.
 ```
